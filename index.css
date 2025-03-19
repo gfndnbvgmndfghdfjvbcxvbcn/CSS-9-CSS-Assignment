@@ -159,6 +159,10 @@ p {
     color: rgb(24, 30, 75);
 }
 
+#para_2 {
+    display: none;
+}
+
 .Buttons {
     display: flex;
     flex-direction: row;
@@ -567,7 +571,7 @@ img {
 
 /* Section 7 Start From Here */
 .section_7 {
-    margin-top: 10%;
+    margin: 10% 5% 0;
     background-image: url(Images/Section_7_Background.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -680,7 +684,7 @@ img {
 .section_8_Icons {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
 }
 
 .section_8_Icons_Box_1 {
@@ -712,15 +716,195 @@ img {
 
 /* Section 8 Ends Here */
 
+/* Media Query For Tablets Landspace Screens Start From Here  */
+@media only screen and (max-width: 1366px) {
+    * {
+        margin: 0;
+    }
 
+    .section_1 {
+        padding: 0 2%;
+    }
 
+    .navBar {
+        margin: 0 3% 0;
+    }
+
+    .nav_Bar {
+        display: flex;
+    }
+
+    .nav_Bar_For_Mobile a {
+        font-size: 25px;
+    }
+
+    .Lines_Nav_For_Mobile {
+        display: none;
+    }
+
+    .text_image {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .text {
+        margin: 0 3% 0;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    .text h3 {
+        font-size: 13px;
+    }
+
+    .text h1 {
+        font-size: 105px;
+    }
+
+    #para_1 {
+        display: none;
+    }
+
+    #para_2 {
+        display: flex;
+        font-size: 22px;
+    }
+
+    .Buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        width: 50%;
+    }
+
+    #Find_Button {
+        font-size: 14px;
+    }
+
+    #Play_Button {
+        width: 80%;
+        padding: 8% 0;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    #Play_Button svg {
+        height: 40px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    #Traveling_lady_Image {
+        display: flex;
+        height: 70%;
+        width: 45%;
+    }
+
+    .section_2 {
+        padding: 0 2%;
+    }
+
+    .section_2_Boxes {
+        flex-direction: row;
+    }
+
+    .Hover_Shape {
+        left: -10%;
+        bottom: -10%;
+    }
+
+    .section_4 {
+        padding: 0 2%;
+
+    }
+
+    .Section_4_Text_and_Image {
+        flex-direction: row;
+    }
+
+    .Section_4_Text h1 {
+        font-size: 75px;
+    }
+
+    #Section_4_Image_1 {
+        right: -0px;
+        top: 100px;
+        width: 320px;
+    }
+
+    #Section_4_Upper_Image {
+        height: 130px;
+        width: 240px;
+        left: -200px;
+        top: 54%;
+        bottom: 0;
+    }
+
+    .section_5 {
+        padding: 0 2%;
+        position: relative;
+    }
+
+    .Section_5_Text h1 {
+        font-size: 70px;
+    }
+
+    .Section_5_Outer_Box_1 {
+        margin-top: 13%;
+    }
+
+    .Section_5_Slider {
+        top: 30%;
+        right: 8%;
+    }
+
+    .section_6 {
+        padding: 0 2%;
+    }
+
+    .section_6_Boxes {
+        margin: 10% 5% 10%;
+        gap: 40px;
+    }
+
+    #section_7_Search_Bar {
+        padding: 15px 0%;
+        box-shadow: 0px 0px 15px rgba(170, 170, 170, 0.1);
+    }
+
+    #section_7_Subscribe_Button {
+        padding: 15px 15%;
+        box-shadow: 0px 0px 15px rgba(170, 170, 170, 0.1);
+    }
+
+    .section_8 {
+        padding: 0 2%;
+        margin-bottom: 16%;
+    }
+
+    .section_8_Text{
+        gap: 40px;
+    }
+
+    .section_8_Icons_Box_3 {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+/* Media Query For Tablets Landspace Screens Ends Here  */
+
+/* Media Query For Mobile Screens Start From Here  */
 @media only screen and (max-width: 600px) {
     * {
         margin: 0;
     }
 
     .section_1 {
-        /* background-size: 10% 40%; */
         padding: 0 2%;
     }
 
@@ -728,7 +912,7 @@ img {
         display: none;
     }
 
-    .nav_Bar_For_Mobile a{
+    .nav_Bar_For_Mobile a {
         font-size: 25px;
     }
 
@@ -1095,3 +1279,4 @@ img {
     }
 }
 
+/* Media Query For Mobile Screens End Here  */
