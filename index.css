@@ -240,10 +240,14 @@ p {
     color: rgb(24, 30, 75);
 }
 
-.section_2_Boxes {
+.section_2_Boxes, .section_2_Boxes_2 {
     display: flex;
     gap: 20px;
     margin: 0 5% 0;
+}
+
+.section_2_Boxes_2{
+    display: none;
 }
 
 .Box {
@@ -627,7 +631,6 @@ img {
 /* Section 8 Start From Here */
 .section_8 {
     margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 .section_8_Text_and_Icons {
@@ -642,6 +645,10 @@ img {
 }
 
 #section_8_Text_2 {
+    display: none;
+}
+
+.Section_8_Fotter{
     display: none;
 }
 
@@ -898,6 +905,229 @@ img {
 }
 /* Media Query For Tablets Landspace Screens Ends Here  */
 
+/* Media Query For Tablets Portrait Screens Start From Here  */
+@media only screen and (max-width: 912px) {
+    * {
+        margin: 0;
+    }
+
+    .nav_Bar {
+        display: none;
+    }
+
+    .nav_Bar_For_Mobile a {
+        font-size: 25px;
+    }
+
+    .Lines_Nav_For_Mobile {
+        display: inline-block;
+    }
+
+    .text_image {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .text {
+        margin: 0 3% 0;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    .text h3 {
+        font-size: 15px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
+    #para_1 {
+        display: none;
+    }
+
+    #para_2 {
+        display: flex;
+        font-size: 18px;
+    }
+
+    .Buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        width: 50%;
+    }
+
+    #Find_Button {
+        font-size: 14px;
+    }
+
+    #Play_Button {
+        width: 80%;
+        padding: 8% 0;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    #Play_Button svg {
+        height: 40px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    #Traveling_lady_Image {
+        display: flex;
+        height: 70%;
+        width: 45%;
+    }
+
+    .section_2 {
+        padding: 0 2%;
+    }
+
+    .section_2_Boxes {
+        display: none;
+    }
+
+    .section_2_Boxes_2{
+        display: flex;
+    }
+
+    .Hover_Shape {
+        left: -10%;
+        bottom: -10%;
+    }
+
+    .section_3 {
+        display: flex;
+        justify-content: center;
+        padding: 0 2%;
+    }
+
+    .section_3_Boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .Boxes {
+        height: 80%;
+        width: 80%;
+    }
+
+
+    .section_4 {
+        padding: 0 2%;
+
+    }
+
+    .Section_4_Text_and_Image {
+        flex-direction: column;
+    }
+
+    .Section_4_Image {
+        justify-content: flex-start;
+        margin-bottom: 10%;
+        margin-left: 10%;
+    }
+
+    #Section_4_Image_1 {
+        position: static;
+        height: 420px;
+        width: 420px;
+    }
+
+    #Section_4_Upper_Image {
+        height: 120px;
+        width: 240px;
+        left: 50%;
+        top: 50%;
+        bottom: 0;
+    }
+
+    .section_5 {
+        padding: 0 2%;
+        position: relative;
+    }
+
+    .Section_5_Text_And_Box {
+        flex-direction: column;
+    }
+
+    .Section_5_Outer_Box_1 {
+        margin-top: 5%;
+    }
+
+    .Section_5_Slider {
+        top: 60%;
+        right: 20%;
+    }
+
+    .section_6 {
+        padding: 0 2%;
+    }
+
+    .section_6_Boxes {
+        margin: 10% 5% 10%;
+        gap: 40px;
+    }
+
+    #section_7_Search_Bar {
+        padding: 15px 40%;
+        box-shadow: 0px 0px 15px rgba(170, 170, 170, 0.1);
+    }
+
+    #section_7_Subscribe_Button {
+        padding: 15px 15%;
+        box-shadow: 0px 0px 15px rgba(170, 170, 170, 0.1);
+    }
+
+    .section_8 {
+        padding: 0 2%;
+        margin-bottom: 16%;
+    }
+
+    .section_8_Text{
+        display: none;
+    }
+
+    .section_8_Icons{
+        display: none;
+    }
+
+    .Section_8_Fotter{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #section_8_Text_3{
+        display: flex;
+    }
+
+    .section_8_Box{
+        padding-right: 10%;
+    }
+
+    .section_8_Box h4{
+        width: 150px;
+    }
+
+    #section_8_Icons_2{
+        display: flex;
+    }
+
+    .Section_8_Footer_Text_and_Icon{
+        display: flex;
+        gap: 50%;
+    }
+}
+/* Media Query For Tablets Portrait Screens Ends Here  */
+
 /* Media Query For Mobile Screens Start From Here  */
 @media only screen and (max-width: 600px) {
     * {
@@ -994,7 +1224,12 @@ img {
         align-items: center;
     }
 
+    .section_2_Boxes_2{
+        display: none;
+    }
+
     .section_2_Boxes {
+        display: flex;
         flex-direction: column;
     }
 
@@ -1092,10 +1327,10 @@ img {
     }
 
     #Section_4_Upper_Image {
-        height: 160px;
-        width: 280px;
-        left: 15%;
-        top: 70%;
+        height: 120px;
+        width: 240px;
+        left: 26%;
+        top: 65%;
         bottom: 0;
     }
 
@@ -1238,6 +1473,10 @@ img {
     .section_8 {
         padding: 0 2%;
         margin-bottom: 16%;
+    }
+
+    .Section_8_Fotter{
+        display: none;
     }
 
     .section_8_Text_and_Icons {
